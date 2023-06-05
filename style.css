@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Oswald:wght@300;400;500;600;700&family=Red+Hat+Display:wght@400;800&display=swap');
+/* font-family: 'Open Sans', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Red Hat Display', sans-serif; */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Oswald', sans-serif;
+}
+header {
+    border-bottom: 1px solid black;
+}
+.header-row1 {
+    display: flex;
+    height: 110px;
+    background-color: #0F212F;
+}
+.header-logo {
+    background-color: #1E3240;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 0 20px 0;
+    cursor: pointer;
+    padding: 0 .5rem 0 0;
+}
+.logo-img {
+    width: 190px;
+}
+.header-bar {
+   display: flex; 
+   flex-direction: column;
+   width: 100%;
+   justify-content: space-around;
+}
+.bar1 {
+    height: 45%;
+    background-color: #0C1922;
+}
+.menu0 {
+    gap: 30px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;    
+    list-style-type: none;
+    font-weight: 400;
+    font-size: 0.75rem;
+    height: 100%;
+    padding: 0 20px;
+}
+.menu0 > li {
+    color: #808f9f;
+}
+.menu0 > li::after {
+    transition: all 1s ease-in-out;
+}
+.menu0 > li:hover{
+    color: white;
+}
+.bar2 {
+    height: 55%;
+    background-color: #0F212F;
+    display: flex;
+    padding: 0 10%;
+    justify-content: space-between;
+}
+.menu {
+    gap: 30px;
+    color: white;
+    text-transform: uppercase;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;    
+    list-style-type: none;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.menu > li:nth-child(2) {
+    color: #747474;
+}
+.menu > li {
+    border-bottom: 1px solid transparent;    
+    transition: all .4s ease-in-out;
+}
+.menu > li:hover {
+    border-bottom: 1px solid white;
+}
+.sign {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+.signup {
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid transparent;    
+    transition: all .4s ease-in-out;
+}
+.signup:hover {
+    border-bottom: 1px solid white;
+}
+.header-match-centre {
+    height: 150px;
+    background-image: url('img/bg-header.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 2px solid #0F212F;
+    border-bottom: 0;
+    border-left: 0;
+    border-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-match-centre > p {
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 500;
+}
+.header-years {
+    height: 70px;
+    background-color: #0C1922;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    color: white;
+}
+.year, .teams {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    cursor: pointer;
+}
+.year {
+    transition: 1s ease;
+}
+.year:hover {
+    transform: scale(1.1);
+}
+.arrow-down {
+    width: 0; 
+  height: 0; 
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 6px solid #00CDE6;
+}
+.arrow-left {
+    width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-right: 10px solid #00CDE6;
+}
+.arrow-right {
+    width: 0; 
+  height: 0; 
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #00CDE6;
+}
+.header-row-cal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-rts {
+    width: 100%;
+    max-width: 580px;
+    height: 60px;
+    border: 1px solid #00CDE6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0 0 10px 10px;
+    text-transform: uppercase;
+    overflow: hidden;
+}
+.header-rts {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.header-rts > div {
+display: flex;
+justify-content: center;
+align-items: center;
+    height: 100%;
+    width: 100%;
+}
+.rounds, .table {
+    border-right: 1px solid #00CDE6;
+}
+.rounds {
+    background-color: #00CDE6;
+    color: white;
+}
+.table:hover, .shields:hover {
+    background-color: #00CDE6;
+    color: white;
+}
+.header-matches {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+}
+.days-matches {
+    width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    flex: 1;
+}
+.days-li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #747474;
+    cursor: pointer;
+}
+.days-li > span:nth-child(4), .days-li > span:nth-child(5) {
+    color: black;
+}
+.days-li > span {
+    transition: 0.4s;
+}
+.days-li > span:hover {
+    padding: 0 0 10px 0;
+}
+.days-li > span:nth-child(3) {
+    color: #00CDE6;
+    font-size: 60px;
+    padding: 0;
+}
+.blank {
+    width: calc(100% - 600px);
+}
+.my-team {
+   align-self: center;
+    margin-left: auto;
+    cursor: pointer;
+}
+.my-team > span {
+    text-transform: uppercase;
+    font-size: 0.90rem;
+    font-weight: 500;
+    word-spacing: 2px;
+    letter-spacing: 2px;
+    border: 1px solid #00CDE6;
+    background-color: #EBFBFD;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+    white-space: nowrap;
+}
+main {
+    width: 100%;
+    padding-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+main > p {
+    text-align: center;
+    padding: 30px 0 0 0 ;
+    font-weight: 100;
+}
+.container {
+    width: 100%;  
+    max-width: 1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 10px 0;
+    flex-wrap: wrap;
+}
+.main {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    max-width: 1024px;
+    width: 100%;
+    gap: 30px;
+}
+.date {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.5rem;
+    padding: 20px 0 10px 0;
+}
+.wrapper-banner {
+    position: relative;
+    width: 100%;
+    height: 270px;
+    margin: 0 20px;
+    border-radius: 0 0 20px 20px;
+    display: flex;
+    overflow: hidden;
+    cursor: pointer;
+}
+.lx-logo:hover  {
+    transform: scale(1.1);
+}
+.rx-logo:hover  {
+    transform: scale(1.1);
+}
+.wrapper-banner:hover .lx-team-name {
+}
+.banner {
+    position: absolute;  
+    width: calc(100% - 40px);
+    margin: 0 20px;
+    height: 270px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Oswald', sans-serif;
+}
+.row-0 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    z-index: 999;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding-bottom: 50px;
+}
+.time {
+    background-color: #FF4B5A;
+    color: white;
+    padding: 5px 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 999;
+    border-radius: 0 0 5px 5px;
+}
+.lx {
+    /* background-color: rgb(90, 170, 240); */
+    width: 50%;
+}
+.lx-bg {
+    margin: 0 0 0 20px;
+    /* background-image: url('../img/blue-background-1.png'); */
+    background-size: cover;
+    opacity: 30%;
+    height: 100%;
+    box-shadow: inset 55px 0px 55px -55px black, inset -55px 0px 55px -55px black;
+}
+.rx-bg {
+    margin: 0 20px 0 0px;
+    /* background-image: url('../img/green-background-1.png'); */
+    background-size: cover;
+    opacity: 30%;
+    height: 100%;
+    box-shadow: inset 55px 0px 55px -55px black, inset -55px 0px 55px -55px black;
+}
+.row-1 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 999;
+}
+.lx-logo {
+    transition: all .3s ease-in-out;
+    padding-right: 50px;
+}
+.rx-logo {
+    transition: all .3s ease-in-out;
+    padding-left: 50px;
+}
+.logo {
+    width: 120px;   
+    /* transition: all .3s ease-in-out; */
+}
+/* .logo:hover {
+    transform: scale(1.1);
+    transition: all .3s ease-in-out;
+}  */
+.column-1, .column-2 {
+    display: flex;
+    align-items: center;
+    width: 265px;
+}
+.lx-team-name {
+    font-size: 2.5rem;
+    text-align: right;
+    color: white;
+    text-transform: uppercase;
+    font-weight:500;
+   width: 200px;
+    line-height: 35px;
+    transition: all .3s ease-in-out;
+}
+.rx-team-name {
+    font-size: 2.5rem;
+    text-align: left;
+    color: white;
+    text-transform: uppercase;
+    font-weight:500;
+    max-width: 200px;
+    line-height: 30px;
+    transition: all .3s ease-in-out;
+}
+.first-name {
+    font-size: 1.7rem;
+    padding: 0;
+    display: block;
+}
+.lx-points {
+   width: 78px;
+   height: 92px;
+   background-color: white;
+   border-radius: 0 0 0px 10px;
+   font-size: 45px; 
+   font-weight: bold;
+   display: flex;
+   align-items:center;
+   justify-content: center;
+   margin-left: 20px;
+}
+.rx-points {
+    width: 78px;
+    height: 92px;
+    background-color: white;
+    border-radius: 0 0 10px 0px;
+    font-size: 45px; 
+    font-weight: bold;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    margin-right: 20px;
+ }
+.row-2 {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    align-items: center;
+    z-index: 999;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.position {
+    font-size: 1.2rem;
+}
+.position-lx, .position-rx {
+    font-size: 1.2rem;
+}
+.pos {
+    font-size: 0.75rem;
+}
+.row-3 {
+    z-index: 998;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500; 
+}
+.logo-urc {
+    width: 70px;
+    margin-top: 10px;
+}
+.rx {
+    /* background-color: #00B46E; */
+    width: 50%;
+}
+.stadium-name {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    align-self: flex-end;
+}
+.rx-team-name .first-name {
+    visibility: hidden;
+}
+footer {
+}
+.footer-row1 {
+    background-image: url('img/bright-background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.footer-row1-header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px;
+}
+.footer-row1-header > h1 {
+    justify-self: center;
+    margin: auto;
+}
+.footer-arrows {
+   border: 1px solid black;
+    border-radius: 20px;
+    display: flex;
+    justify-self:right;
+    margin-left: 0 auto;
+}
+.arrow-rx, .arrow-lx {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0 25px;
+}
+.arrow-rx {
+    border-left: 1px solid #000000;
+}
+.arrow-rx > .arrow-right {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 7px solid #000000;
+}
+.arrow-lx > .arrow-left {
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent; 
+    border-right: 7px solid #000000;
+}
+.news-card {
+    display: flex;
+    justify-content: center;
+    gap: 2%;
+}
+.news-card > .card {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px 0 10px 0;
+    overflow: hidden;
+    cursor: pointer;
+}
+.news-pic {
+    height: 50%;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+.news-pic > img {
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: 0.5s ease;
+    width: 100%;
+}
+.card:hover > .news-pic > img {
+    transform: scale(1.1);
+}
+.card-header {
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-header > .title {
+    color: red;
+    font-weight: 500;
+    font-size: 0.85rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border: 1px solid red;
+    border-radius: 0 0 5px 0;
+    padding: 0 10px;
+}
+.card-header > .card-date {
+    color: #747474;
+    font-size: 1rem;
+}
+.card-content {
+    padding: 10px 20px;
+    display: flex;
+    line-height:1.7rem;
+}
+.card-est {
+    margin-bottom: 40px;
+    color: #747474;
+    padding: 10px 20px;
+}
+.footer-row1-footer {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0 60px 0;
+}
+.latest-btn {
+    background-color: #0F212F;
+    color: white;
+    letter-spacing: 2px;
+    font: 1rem;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 10px 0 10px 0;
+    cursor: pointer;
+}
+.footer-row2 {
+    padding: 100px 0 60px 0;
+    background-color: #142837;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.footer-row2-header {
+    color: #979797;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 1rem;
+    padding: 10px 0 40px 0;
+}
+.partners {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.partners > img {
+    width: 10%;
+    object-fit: contain;
+    cursor: pointer;
+    filter: grayscale(1);
+    transition: filter .5s ease-in-out;
+}
+.partners > img:hover {
+    filter: grayscale(0);
+}
+.footer-row3 {
+    background-color: #0C1922;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 40px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 2.5rem;
+}
+.footer-row3 > .col-1 i {
+    cursor: pointer;
+}
+.col-1 i:hover {
+    color: #00CDE6;
+}
+.footer-row3 li {
+    cursor: pointer;
+    list-style-type: none;
+}
+.footer-row3 li:hover {
+    text-decoration: underline;
+}
+.col-1 > p, .col-5 > p {
+    color: #747474;
+}
+.col-5 > img {
+    cursor: pointer;
+}
+.copyright {
+    padding: 20px;
+    background-color: #0C1922;
+    color: #747474;
+    font-weight: lighter;
+}
+.copyright > hr {
+    background-color: #747474;
+    height: 0.1rem;
+    border: 0;
+    margin-bottom: 20px;
+}
+.copyright .copy {
+    display: flex;
+    justify-content: space-between;
+}

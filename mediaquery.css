@@ -1,0 +1,331 @@
+/* Normal */
+/* Normal */
+@media(max-width: 207px) {
+    .menu0, .menu, .sign {
+        display: none;
+    }
+    .logo-urc {
+        width: 55px;
+        margin-top: 10px;
+    }
+    .lx-logo, .rx-logo {
+        visibility:hidden;
+    }
+    .wrapper-banner {
+        height: 290px;
+    }
+    .time {
+        font-size: 0.6rem;
+        padding: 7px 10px;
+    }
+    .lx-bg {
+        margin: 0 0 0 10px;
+    }
+    .rx-bg {
+        margin: 0 10px 0 0;
+    } 
+    .time {
+        font-size: 0.7rem;
+        padding: 7px 10px;
+    }
+    .logo {
+        width: 60px;   
+    }
+    .row-1 {
+        margin-bottom: 10px;
+    }
+    .row-2 {
+        height: 18%;
+         justify-content: center;
+     }
+     .position-rx {
+         order: 3;
+         padding: 0;
+         align-self: flex-start;
+         font-size: 0.75rem;
+     }
+     .position-lx {
+         order: 1;
+         padding: 0;
+         align-self: flex-start;
+         font-size: 0.75rem;
+     }
+     .stadium-name {
+         order: 2;
+         font-size: 0.8rem;
+         letter-spacing: 0.8px;
+         padding-top: 10px;
+     }
+    .column-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+    .column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .lx-team-name, .rx-team-name {
+        order: 2;
+        line-height: 12px;
+        margin-bottom: -5px;
+    }
+    .lx-points, .rx-points {
+        width: 65px;
+        height: 68px;
+        font-size: 40px;
+        margin-bottom: 6px;
+    }
+    .first-name {
+        font-size: 1rem;
+    }
+    .second-name {
+        font-size: 1.5rem;
+    }
+    .date {
+        font-size: 1.3rem;
+    }
+    .card-header > .title {
+        display: none;
+    }
+    .card-content {
+        font-size: .5rem;
+        line-height: normal;
+    }
+    .card-est {
+        display: none;
+    }
+    .card-date {
+        font-size: .4rem;
+    }
+    footer .col-1,
+    footer .col-2,
+    footer .col-4,
+    footer .col-5 {
+        display: none;
+    }
+}
+@media(min-width: 208px) and (max-width: 768px) {
+    header { 
+        border: none;
+    }
+        .menu0, .menu, .sign {
+            display: none;
+        }
+        .header-matches {
+            display: none;
+        }
+    .my-team > span { 
+        display: none;
+    }
+    .lx-logo, .rx-logo {
+        display: none;
+    }
+    .logo-urc {
+        width: 55px;
+        margin-top: 10px;
+    }
+    .wrapper-banner {
+        height: 290px;
+    }
+    .time {
+        font-size: 0.6rem;
+        padding: 7px 10px;
+    }
+    .lx-bg {
+        margin: 0 0 0 10px;
+    }
+    .rx-bg {
+        margin: 0 10px 0 0;
+    } 
+    .time {
+        font-size: 0.7rem;
+        padding: 7px 10px;
+    }
+    .logo {
+        width: 60px;   
+    }
+    .row-1 {
+        margin-bottom: 10px;
+        width: auto;
+    }
+    .row-2 {
+        height: 18%;
+         justify-content: center;
+     }
+     .position-rx {
+         order: 3;
+         padding: 0;
+         align-self: flex-start;
+         font-size: 0.75rem;
+     }
+     .position-lx {
+         order: 1;
+         padding: 0;
+         align-self: flex-start;
+         font-size: 0.75rem;
+     }
+     .stadium-name {
+         order: 2;
+         font-size: 0.8rem;
+         letter-spacing: 0.8px;
+         padding-top: 10px;
+     }
+    .column-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+    .column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .lx-team-name, .rx-team-name {
+        order: 2;
+        line-height: 12px;
+        margin-bottom: -5px;
+    }
+    .lx-points, .rx-points {
+        width: 65px;
+        height: 68px;
+        font-size: 40px;
+        margin-bottom: 6px;
+    }
+    .first-name {
+        font-size: 1rem;
+    }
+    .second-name {
+        font-size: 1.5rem;
+    }
+    .date {
+        font-size: 1.3rem;
+    }
+    .card-header > .title {
+        display: none;
+    }
+    .card-content {
+        font-size: .5rem;
+        line-height: normal;
+    }
+    .card-est {
+        display: none;
+    }
+    .card-date {
+        font-size: .4rem;
+    }
+    footer .col-1,
+    footer .col-2,
+    footer .col-4,
+    footer .col-5 {
+        display: none;
+    }
+}
+@media(min-width: 769px) and (max-width: 1023px) {
+    .sign {
+        display: none;
+    }
+    .lx-bg {
+        margin: 0 0 0 10px;
+    }
+    .rx-bg {
+        margin: 0 10px 0 0;
+    } 
+    .date {
+        font-size: 1.3rem;
+    }
+    .time {
+        font-size: 0.7rem;
+        padding: 7px 10px;
+    }
+    .logo {
+        width: 60px;   
+    }
+    .position-rx {
+        padding: 0 25px;
+    }
+    .position-lx {
+        padding: 0 25px;
+    }
+    .row-1 {
+        margin-bottom: 10px;
+    }
+    .row-2 {
+       height: 18%;
+        justify-content: center;
+    }
+    .position-rx {
+        order: 3;
+        padding: 0;
+        align-self: flex-start;
+    }
+    .position-lx {
+        order: 1;
+        padding: 0;
+        align-self: flex-start;
+    }
+    .stadium-name {
+        order: 2;
+    }
+    .column-1 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-right: 10px;
+    }
+    .column-2 {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding-left: 10px;
+    }
+    .lx-team-name {
+        order: 2;
+        line-height: 12px;
+        margin-bottom: -5px;
+    }
+    .rx-team-name {
+        order: 2;
+        line-height: 12px;
+        margin-bottom: -5px;
+    }
+    .lx-points {
+        width: 65px;
+        height: 68px;
+        font-size: 40px;
+        margin-bottom: 6px;
+    }
+    .rx-points {
+        width: 65px;
+        height: 68px;
+        font-size: 40px;
+        margin-bottom: 6px;
+    }
+    .first-name {
+        font-size: 1rem;
+    }
+    .second-name {
+        font-size: 1.5rem;
+    }
+    .stadium-name {
+    font-size: 0.8rem;
+    letter-spacing: 0.8px;
+}
+.position-lx, .position-rx {
+    font-size: 0.75rem;
+}
+    .stadium-name {
+        padding-top: 10px;
+    }
+    footer .col-1,
+    footer .col-2,
+    footer .col-4,
+    footer .col-5 {
+        display: none;
+    }
+}
